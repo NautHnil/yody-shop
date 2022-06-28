@@ -1,0 +1,42 @@
+$body-bg: #fff;
+$header-bg: #fff;
+$main-color: #fcb749;
+$txt-color: #010101;
+$white-color: #fff;
+$black-color: #000;
+$txt-second-color: #8d8d8d;
+$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+$header-height: 10rem;
+$banner-top-height: 80px;
+$header-shrink-height: 100px;
+$border-radius: 30px;
+
+$header-tablet-height: 70px;
+$header-mobile-height: 40px;
+$header-shrink-height: 70px;
+
+$mobile-width: 600px;
+$tablet-width: 1024px;
+
+$font-family: "Roboto", sans-serif;
+
+
+
+$colors: (
+
+    "white":#fff,
+    "pink":#fe7e73,
+    "black":#000,
+    "yellow":rgb(239, 225, 89),
+    "orange":#fbb96b,
+    "blue":#4267b2,
+    "navy":rgb(3, 32, 76),
+    "green":rgb(98, 191, 94),
+    "mint":rgb(140, 214, 196),
+    "red":#ff0000,
+    "brown":rgb(97, 59, 13),
+    "main": $main-color
+
+);
+$numbers: (0, 1, 2, 3, 4, 5, 6, 7, 8);

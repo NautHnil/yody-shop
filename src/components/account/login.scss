@@ -1,0 +1,17 @@
+@use '../../scss/' as *;
+@forward  './register.scss';
+
+.account__forgot {
+    text-align:left;
+    font-size: 15px;
+    color: #7a7a9d;
+    > a {
+        text-decoration: underline;
+    color: #000;
+    }
+}
+.account__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

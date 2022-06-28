@@ -1,0 +1,58 @@
+@use '../../scss/' as *;
+
+.footer {
+    background: #1e1c56;
+    padding: 30px 0;
+
+    &__post {
+        color: $white-color;
+    }
+
+    &__item__header {
+        margin-bottom: 15px;
+        @include mobile {
+            font-size: 18px;
+        }
+    }
+    &__item__info > a > div {
+        margin-bottom: 10px;
+        font-size: 15px;
+        
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+    &__item__social {
+        img {
+            width: 50px;
+            padding-left: 10px;
+        }
+    }
+    &__item__social > a > img {
+        transition: all 0.5s ;
+        &:hover {
+            transform: rotate(30deg);
+        }
+    }
+}
+
+.copyright {
+    margin-top: 20px;
+    border-top: 1px solid #3a386b;
+    text-align: center;
+    font-size: 13px;
+    color: $white-color;
+    padding-top: 20px ;
+
+    span {
+        color: $main-color;
+    }
+}
+
+.img {
+    padding-top: 20px;
+}
+
+.footer-mobile {
+    font-size: 16px;
+}

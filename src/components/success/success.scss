@@ -1,0 +1,80 @@
+@use '../../scss/' as *;
+
+  .description {
+    margin: 1rem 0;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+
+  .description > span {
+      color: $main-color;
+  }
+
+  .success-wrapper{
+    background-color: white;
+    min-height: 60vh;
+  
+  }
+  .success{
+    width: 1000px;
+    margin: auto;
+    margin-top: 160px;
+    background-color: #dcdcdc;
+    padding: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .success .icon {
+     color: green;
+     font-size: 40px;
+  }
+  .success h2{
+    text-transform: capitalize;
+    margin-top: 15px 0px;
+    font-weight: 900;
+    font-size: 40px;
+    color:#324d67;
+  }
+
+  .success .description{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px;
+    margin-top: 10px;
+  }
+  .success .description .email{
+    margin-left: 5px;
+    color: #f02d34;
+  }
+
+  .success-wrapper{
+ 
+    min-height: 69vh;
+
+    @include mobile {
+        min-height: 60vh;
+    }
+  }
+  .success {
+    width: 600px;
+    height: 400px;
+    margin-top: 100px;
+    padding: 20px;
+
+    @include mobile {
+        width: 100%;
+        height: 350px;
+    }
+  }
+
+  .success h2{
+    font-size: 1.5rem;
+    @include mobile {
+        font-size: 2.5rem;
+    }
+  }

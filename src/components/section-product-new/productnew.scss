@@ -1,0 +1,191 @@
+@use '../../scss/' as *;
+.product {
+
+    padding: 2rem 0;
+    background-color: #f8f8f8;
+
+    &__thumbnail {
+        position: relative;
+        max-height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__img {
+        max-width: 100%;
+        height: 100%;
+
+    }
+
+    &__thumbnail &__img {
+
+        transition: transform .5s ease;
+
+    }
+
+    &__thumbnail:hover &__img {
+        transform: scale(1.2);
+        
+      }
+
+    .newTag {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        z-index: 3;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 45px;
+        height: 25px;
+
+    }
+
+    .sale{
+        display: inline-flex;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        z-index: 3;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 50px;
+        height: 25px;
+        margin-bottom: 20px;
+
+        &__number {
+            font-size: 12px;
+            text-align: center;
+            color: #fff;
+            margin: auto;
+        }
+    }
+
+    .hotIcon {
+        position: absolute;
+        top: 40px;
+        right: 8px;
+        z-index: 9;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size:cover;
+        width: 30px;
+        height: 30px;
+        margin-bottom: 20px;
+
+    }
+    .wrapp{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 0;
+        background: #FFF;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        border-radius: 50%;
+        z-index: 1;
+
+        &__heartIcon {
+            position: absolute;
+            top: 0px;
+            right: -3px;
+            z-index: 9;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size:cover;
+            width: 16px;
+            height: 15px;
+            transform: translate(-50%,50%)
+        }
+    }
+
+    h1 {
+        padding-top:160px;
+        padding: 40px 0;
+        font-size: 1.2rem;
+        font-weight: 400;
+        text-align: center;
+        margin: auto 0;
+        color: $main-color;
+        
+        @include mobile {
+            font-size: 1.6rem;
+        }
+    }
+    &__title {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        margin: 5px 0;
+        height: 38px;
+        min-width: 186px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        
+        @include tablet {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+            min-width: 150px;
+
+        }
+        @include mobile {
+            font-size: 1.6rem;
+            line-height: 2rem;
+            margin-bottom: 5px;
+        }
+    }
+    .product__img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+.new {
+    font-size: 16px;
+    margin-right: 15px;
+    font-weight: 600;
+    color: $main-color;
+}
+
+.old {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #7A7A9D;
+    line-height: 17px;
+    display: inline;
+
+}
+
+
+// Custom buttton swiper
+
+.swiper-button-prev {
+    background-image: url("../../assets/image/prev_bst.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::after {
+        display:none !important;
+    }
+
+}
+.swiper-button-next {
+    background-image: url("../../assets/image/next_bst.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::after {
+        display:none !important;
+    }
+}
+
+
+.swiper-button-prev, .swiper-button-next {
+    top: calc(50% - 50px) !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+  

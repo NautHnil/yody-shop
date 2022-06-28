@@ -1,0 +1,44 @@
+@use '../../scss/' as *;
+
+.btn__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #fcaf17;
+    padding: 15px 25px;
+    margin: 30px auto;
+    border:none;
+    border-radius: 5px;
+    border:1px solid #fcaf17;
+    min-width: 330px;
+    min-height: 56px;
+
+    &:hover {
+        color: #fcaf17;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    &:disabled {
+        color: #fcaf17a6;
+        cursor: not-allowed;
+    }
+
+
+
+    @include tablet {
+        width: 80%;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 10px auto;
+    }
+    @include mobile {
+        width: 80%;
+        font-size: 2rem;
+        margin: 10px auto;
+
+    }
+}
